@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from './logo.svg';
+import User from './User.js'
 
 /*
 Use React and the data below to display a list of users alongside their favorite movies.
@@ -106,6 +107,7 @@ class App extends Component {
           <h1 className="App-title">ReactNDf - Coding Practice</h1>
         </header>
         <h2>Favorite Movies</h2>
+		<User users={users} profiles={profiles} movies={movies}/>
       </div>
     );
   }
